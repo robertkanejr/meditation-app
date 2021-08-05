@@ -2,14 +2,23 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
-    <title>Meditation App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+
+    <title>Mindful Moments</title>
 </head>
 
 <body>
+    <div class="title">
+        <h1>Mindful Moments</h1>
+    </div>
+
     <div class="app">
         <div class="vid-container">
             <video loop>
@@ -27,7 +36,9 @@
             <audio class="song">
                 <source src="./sounds/beach.mp3">
             </audio>
-            <img src="./svg/play.svg" alt="play" class="play">
+            <div class="play-button">
+                <img src="./svg/play.svg" alt="play" class="play">
+            </div>
             <svg class="track-outline" width="453" height="453" viewBox="0 0 453 453" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
                 <circle cx="226.5" cy="226.5" r="216.5" stroke="white" stroke-width="20" />

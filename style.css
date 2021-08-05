@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Kaushan Script', cursive;
 }
 
 .app {
@@ -9,6 +10,13 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+}
+
+.title {
+padding-top: 30px;
+display: flex;
+justify-content: center;
+color: white;
 }
 
 .time-select, 
@@ -50,6 +58,15 @@ video {
     z-index: -1;
 }
 
+.play-button {
+   border-radius: 50%;
+   padding: 100px;
+}
+
+.play-button:hover {
+    background: rgba(45, 138, 177, 0.3);
+}
+
 .time-select button,
 .sound-picker button {
 color: white;
@@ -76,12 +93,16 @@ transition: all 05.s ease;
     padding: 30px;	
 }
 
+.sound-picker button:hover {
+border: white solid;
+}
+
 .sound-picker button:nth-child(1) {
-background: #a14f49;
+background: #daae3f;
 }
 
 .sound-picker button:nth-child(2) {
-    background: #497281;
+    background: #476f7e;
     }
 
 .sound-picker button img {
