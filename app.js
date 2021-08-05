@@ -35,7 +35,7 @@ play.addEventListener("click", () => {
 timeSelect.forEach(option => {
     option.addEventListener("click", function () {
         fakeDuration = this.getAttribute("data-time");
-        timeDisplay.textContent = `${Math.floor(fakeDuration / 60)}:${Math.floor(fakeDuration % 60)}`;
+        timeDisplay.textContent = `${Math.floor(fakeDuration / 60)}:${("0" + Math.floor(fakeDuration % 60))}`;
     });
 });
 
@@ -56,7 +56,7 @@ const checkPlaying = (song) => {
 song.ontimeupdate = () => {
     let currentTime = song.currentTime;
     let elapsed = fakeDuration - currentTime;
-    let seconds = Math.floor(elapsed % 60);
+    let seconds = ("0" + Math.floor(elapsed % 60)).slice(-2);
     let minutes = Math.floor(elapsed / 60);
 
     //Time Animation
