@@ -14,12 +14,12 @@
 }
 
 .title {
-padding-top: 0px;
+padding-bottom: 500px;
 display: flex;
 justify-content: center;
 color: white;
 position: absolute;
-padding-bottom: 500px;
+z-index: -1;
 }
 
 .time-select, 
